@@ -1,6 +1,6 @@
-<?php if(ICL_LANGUAGE_CODE=='ro'): 
-	$lang = 'ro';
-elseif(ICL_LANGUAGE_CODE=='en'): 
+<?php
+$lang = 'ro';
+if(ICL_LANGUAGE_CODE=='en'):
 	$lang = 'en';
 endif; ?>
 <!DOCTYPE html>
@@ -16,12 +16,12 @@ endif; ?>
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/apple-touch-icon.png">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.png">
     <style>
-    p,
-	ul li,
-	ol li {
-        font-weight: 400;
-    }
-</style>	
+        p,
+        ul li,
+        ol li {
+            font-weight: 400;
+        }
+    </style>
 
     <?php wp_head();?>
 </head>
